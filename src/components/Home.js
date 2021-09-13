@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(true);
     const toggle = () => setIsOpen(!isOpen);
-    
-    let link = document.querySelectorAll('.__link')
-    
-    for (let i = 0; i < link.length; i++) {
-        link[i].classList.add('active')  
-    }
-    
-    
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
+
     return (
         <div>
             <div className="wrapper" id="tableofcontent">
@@ -24,29 +22,29 @@ const Home = () => {
                         </div>
                         <div className="nav-bar">
                             <ul className="list-unstyled content-scroll components navbar-nav nav" id="download-button">
-                                <li className={`active `}>
-                                <a className='__link' href="#introduction">Introduction</a>
+                                <li className='__link'>
+                                    <a href="#introduction">Introduction</a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#installation">Installation</a>
+                                <li className='__link'>
+                                    <a href="#installation">Installation</a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#folder_directories">Folder Directories</a>
+                                <li className='__link'>
+                                    <a href="#folder_directories">Folder Directories</a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#plugins"> Plugins</a>
+                                <li className='__link'>
+                                    <a href="#plugins"> Plugins</a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#html_structure">Html Structure</a>
+                                <li className='__link'>
+                                    <a href="#html_structure">Html Structure</a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#our_product">Our Products </a>
+                                <li className='__link'>
+                                    <a href="#our_product">Our Products </a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#custom_work">Custom Work Requirements </a>
+                                <li className='__link'>
+                                    <a href="#custom_work">Custom Work Requirements </a>
                                 </li>
-                                <li>
-                                <a className='__link' href="#version_history">Version History</a>
+                                <li className='__link'>
+                                    <a href="#version_history">Version History</a>
                                 </li>
                             </ul>
                         </div>
@@ -64,7 +62,7 @@ const Home = () => {
                             </div>
                             <div>
                                 <a href="https://w3itexperts.ticksy.com/" target="bank" className="site-button support-button">Support</a>
-                                <a href="#"  className="site-button support-button">Buy Now</a>
+                                <a href="#" className="site-button support-button">Buy Now</a>
                             </div>
                         </div>
                     </nav>
@@ -756,12 +754,12 @@ const Home = () => {
                             <div className="row other-theme">
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/0zjyE">
+                                        <a href="https://1.envato.market/0zjyE">
                                             <img src="images/product/wp-beglide.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/0zjyE">
+                                                <a href="https://1.envato.market/0zjyE">
                                                     BeGlide: Corporate Business Consultant Agency WordPress Theme
                                                 </a>
                                             </h4>
@@ -770,12 +768,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/NE0QP">
+                                        <a href="https://1.envato.market/NE0QP">
                                             <img src="images/product/wp-bheem.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/NE0QP">
+                                                <a href="https://1.envato.market/NE0QP">
                                                     Bheem : Construction WordPress Theme RTL Ready
                                                 </a>
                                             </h4>
@@ -784,12 +782,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/WEdAZ">
+                                        <a href="https://1.envato.market/WEdAZ">
                                             <img src="images/product/wp-beautyzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/WEdAZ">
+                                                <a href="https://1.envato.market/WEdAZ">
                                                     BeautyZone: Beauty Spa Salon WordPress Theme
                                                 </a>
                                             </h4>
@@ -798,12 +796,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/6MAKK">
+                                        <a href="https://1.envato.market/6MAKK">
                                             <img src="images/product/wp-bucklin.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href=" ">
+                                                <a href=" ">
                                                     Bucklin - Creative Personal Blog WordPress Theme
                                                 </a>
                                             </h4>
@@ -812,12 +810,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/oJLNY">
+                                        <a href="https://1.envato.market/oJLNY">
                                             <img src="images/product/archia.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/oJLNY">
+                                                <a href="https://1.envato.market/oJLNY">
                                                     Archia - Architecture and Interior Design RTL Ready Template
                                                 </a>
                                             </h4>
@@ -826,12 +824,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/XEnGb">
+                                        <a href="https://1.envato.market/XEnGb">
                                             <img src="images/product/agency.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/XEnGb">
+                                                <a href="https://1.envato.market/XEnGb">
                                                     Agency | Creative Multipurpose Bootstrap 4 HTML Template
                                                 </a>
                                             </h4>
@@ -840,12 +838,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/3zZ9y">
+                                        <a href="https://1.envato.market/3zZ9y">
                                             <img src="images/product/constructzilla .png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/3zZ9y">
+                                                <a href="https://1.envato.market/3zZ9y">
                                                     ConstructZilla : Construction, Renovation &amp; Building HTML Template With RTL Ready
                                                 </a>
                                             </h4>
@@ -854,12 +852,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/ZEKLg">
+                                        <a href="https://1.envato.market/ZEKLg">
                                             <img src="images/product/cargozone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/ZEKLg">
+                                                <a href="https://1.envato.market/ZEKLg">
                                                     CargoZone - Transport, Cargo, Logistics &amp; Business Multipurpose HTML Template
                                                 </a>
                                             </h4>
@@ -868,12 +866,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/JZVO7">
+                                        <a href="https://1.envato.market/JZVO7">
                                             <img src="images/product/yogazone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/JZVO7">
+                                                <a href="https://1.envato.market/JZVO7">
                                                     YogaZone: Yoga, Fitness &amp; Meditation Mobile Responsive Bootstrap Html Template
                                                 </a>
                                             </h4>
@@ -882,12 +880,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/0zjxY">
+                                        <a href="https://1.envato.market/0zjxY">
                                             <img src="images/product/gardanzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/0zjxY">
+                                                <a href="https://1.envato.market/0zjxY">
                                                     GardenZone | Agriculture, Gardening &amp; Landscaping Responsive HTML Template
                                                 </a>
                                             </h4>
@@ -896,12 +894,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/VdYZJ">
+                                        <a href="https://1.envato.market/VdYZJ">
                                             <img src="images/product/construct.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/VdYZJ">
+                                                <a href="https://1.envato.market/VdYZJ">
                                                     Construct : Construction, Building &amp; Maintenance Business Template
                                                 </a>
                                             </h4>
@@ -910,12 +908,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/REnO2">
+                                        <a href="https://1.envato.market/REnO2">
                                             <img src="images/product/butterfly.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/REnO2">
+                                                <a href="https://1.envato.market/REnO2">
                                                     ButterFly : Spa, Beauty Salon &amp; Massage Template
                                                 </a>
                                             </h4>
@@ -924,12 +922,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/bQNDm">
+                                        <a href="https://1.envato.market/bQNDm">
                                             <img src="images/product/curv.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/bQNDm">
+                                                <a href="https://1.envato.market/bQNDm">
                                                     CURV: One Page Multipurpose Parallax
                                                 </a>
                                             </h4>
@@ -938,12 +936,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/zObPW">
+                                        <a href="https://1.envato.market/zObPW">
                                             <img src="images/product/beautyzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/zObPW">
+                                                <a href="https://1.envato.market/zObPW">
                                                     BeautyZone: Beauty Spa Salon HTML Template
                                                 </a>
                                             </h4>
@@ -952,12 +950,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/3zZmk">
+                                        <a href="https://1.envato.market/3zZmk">
                                             <img src="images/product/sportszone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/3zZmk">
+                                                <a href="https://1.envato.market/3zZmk">
                                                     SportsZone: Sports Club, New &amp; Game Magazine Mobile Responsive Bootstrap HTML Template
                                                 </a>
                                             </h4>
@@ -966,12 +964,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/3zZmk">
+                                        <a href="https://1.envato.market/3zZmk">
                                             <img src="images/product/medico.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/3zZmk">
+                                                <a href="https://1.envato.market/3zZmk">
                                                     MediCo.- Hospital and Doctor Clinic HTML Template
                                                 </a>
                                             </h4>
@@ -980,12 +978,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/g56Wg">
+                                        <a href="https://1.envato.market/g56Wg">
                                             <img src="images/product/jobboard.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/g56Wg">
+                                                <a href="https://1.envato.market/g56Wg">
                                                     Job Board: Job Portal | Job WebSite HTML Wireframe
                                                 </a>
                                             </h4>
@@ -994,12 +992,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/1d1Nm">
+                                        <a href="https://1.envato.market/1d1Nm">
                                             <img src="images/product/industry.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/1d1Nm">
+                                                <a href="https://1.envato.market/1d1Nm">
                                                     Industry - Factory &amp; Industrial HTML Template
                                                 </a>
                                             </h4>
@@ -1008,12 +1006,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/qoKKy">
+                                        <a href="https://1.envato.market/qoKKy">
                                             <img src="images/product/lemars.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/qoKKy">
+                                                <a href="https://1.envato.market/qoKKy">
                                                     Le Mars - Minimal Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1022,12 +1020,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/A53RN">
+                                        <a href="https://1.envato.market/A53RN">
                                             <img src="images/product/bizmap.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/A53RN">
+                                                <a href="https://1.envato.market/A53RN">
                                                     BizMap - Business Directory Listing HTML Template
                                                 </a>
                                             </h4>
@@ -1036,12 +1034,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/EYb39">
+                                        <a href="https://1.envato.market/EYb39">
                                             <img src="images/product/umang_academy.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/EYb39">
+                                                <a href="https://1.envato.market/EYb39">
                                                     Umang Academy : Kindergarden, Kids Play School Template
                                                 </a>
                                             </h4>
@@ -1050,12 +1048,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/EAeOQ">
+                                        <a href="https://1.envato.market/EAeOQ">
                                             <img src="images/product/kelsey.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/EAeOQ">
+                                                <a href="https://1.envato.market/EAeOQ">
                                                     Kelsey - Creative Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1064,12 +1062,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/xoqvR">
+                                        <a href="https://1.envato.market/xoqvR">
                                             <img src="images/product/bucklin.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/xoqvR">
+                                                <a href="https://1.envato.market/xoqvR">
                                                     Bucklin - Creative Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1078,12 +1076,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a  href="https://1.envato.market/WvZqM">
+                                        <a href="https://1.envato.market/WvZqM">
                                             <img src="images/product/smartclass.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a  href="https://1.envato.market/WvZqM">
+                                                <a href="https://1.envato.market/WvZqM">
                                                     SmartClass | Education Agency Choching &amp; Tuition HTML Template
                                                 </a>
                                             </h4>
@@ -1108,7 +1106,7 @@ const Home = () => {
                                     </ul>
                                     <div className="gmail-box">
                                         <a href="skype:rahulxarma?chat" className="gmail"><i className="fa fa-skype" />rahulxarma</a>
-                                        <a  href="dexignzones@gmail.com" className="gmail"><i className="fa fa-envelope" /> dexignzones@gmail.com</a>
+                                        <a href="dexignzones@gmail.com" className="gmail"><i className="fa fa-envelope" /> dexignzones@gmail.com</a>
                                     </div>
                                 </div>
                             </div>

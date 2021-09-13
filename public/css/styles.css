@@ -17,6 +17,9 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.__link a:active .__link{
+    background-color: rgb(60, 3, 246);
+}
 pre{
     padding: 10px;
     border: 1px solid #ccc;
