@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
-import {useLocation} from 'react-router-dom'
+
 const Home = () => {
     const [isOpen, setIsOpen] = useState(true);
     const toggle = () => setIsOpen(!isOpen);
-    console.log(useLocation)
+    
+    let link = document.querySelectorAll('.__link')
+    
+    for (let i = 0; i < link.length; i++) {
+        link[i].classList.add('active')  
+    }
+    
+    
     return (
         <div>
             <div className="wrapper" id="tableofcontent">
@@ -18,28 +25,28 @@ const Home = () => {
                         <div className="nav-bar">
                             <ul className="list-unstyled content-scroll components navbar-nav nav" id="download-button">
                                 <li className={`active `}>
-                                <a href="#introduction">Introduction</a>
+                                <a className='__link' href="#introduction">Introduction</a>
                                 </li>
                                 <li>
-                                <a href="#installation">Installation</a>
+                                <a className='__link' href="#installation">Installation</a>
                                 </li>
                                 <li>
-                                <a href="#folder_directories">Folder Directories</a>
+                                <a className='__link' href="#folder_directories">Folder Directories</a>
                                 </li>
                                 <li>
-                                <a href="#plugins"> Plugins</a>
+                                <a className='__link' href="#plugins"> Plugins</a>
                                 </li>
                                 <li>
-                                <a href="#html_structure">Html Structure</a>
+                                <a className='__link' href="#html_structure">Html Structure</a>
                                 </li>
                                 <li>
-                                <a href="#our_product">Our Products </a>
+                                <a className='__link' href="#our_product">Our Products </a>
                                 </li>
                                 <li>
-                                <a href="#custom_work">Custom Work Requirements </a>
+                                <a className='__link' href="#custom_work">Custom Work Requirements </a>
                                 </li>
                                 <li>
-                                <a href="#version_history">Version History</a>
+                                <a className='__link' href="#version_history">Version History</a>
                                 </li>
                             </ul>
                         </div>
@@ -57,7 +64,7 @@ const Home = () => {
                             </div>
                             <div>
                                 <a href="https://w3itexperts.ticksy.com/" target="bank" className="site-button support-button">Support</a>
-                                <a href="javascript:void(0);" target="bank" className="site-button support-button">Buy Now</a>
+                                <a href="#"  className="site-button support-button">Buy Now</a>
                             </div>
                         </div>
                     </nav>
@@ -255,7 +262,7 @@ const Home = () => {
                                             <p>amcharts</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.amcharts.com" target="_blank">https://www.amcharts.com</a></p>
+                                            <p><a href="https://www.amcharts.com" >https://www.amcharts.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -265,7 +272,7 @@ const Home = () => {
                                             <p>animate</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://animate.style" target="_blank">https://animate.style</a></p>
+                                            <p><a href="https://animate.style" >https://animate.style</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -275,7 +282,7 @@ const Home = () => {
                                             <p>aos</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://michalsnik.github.io/aos" target="_blank">https://michalsnik.github.io/aos</a></p>
+                                            <p><a href="https://michalsnik.github.io/aos" >https://michalsnik.github.io/aos</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -285,7 +292,7 @@ const Home = () => {
                                             <p>apexchart</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://apexcharts.com" target="_blank">https://apexcharts.com</a></p>
+                                            <p><a href="https://apexcharts.com" >https://apexcharts.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -295,7 +302,7 @@ const Home = () => {
                                             <p>bootstrap</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://getbootstrap.com" target="_blank">https://getbootstrap.com</a></p>
+                                            <p><a href="https://getbootstrap.com" >https://getbootstrap.com</a></p>
 
                                         </div>
                                     </div>
@@ -306,7 +313,7 @@ const Home = () => {
                                             <p>bootstrap4-notify</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="http://bootstrap-notify.remabledesigns.com" target="_blank">http://bootstrap-notify.remabledesigns.com</a></p>
+                                            <p><a href="http://bootstrap-notify.remabledesigns.com" >http://bootstrap-notify.remabledesigns.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -316,7 +323,7 @@ const Home = () => {
                                             <p>bootstrap-daterangepicker</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.daterangepicker.com" target="_blank">https://www.daterangepicker.com</a></p>
+                                            <p><a href="https://www.daterangepicker.com" >https://www.daterangepicker.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -326,7 +333,7 @@ const Home = () => {
                                             <p>bootstrap-material-datetimepicker</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://t00rk.github.io/bootstrap-material-datetimepicker" target="_blank">https://t00rk.github.io/bootstrap-material-datetimepicker</a></p>
+                                            <p><a href="https://t00rk.github.io/bootstrap-material-datetimepicker" >https://t00rk.github.io/bootstrap-material-datetimepicker</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -336,7 +343,7 @@ const Home = () => {
                                             <p>bootstrap-multiselect</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/davidstutz/bootstrap-multiselect" target="_blank">https://github.com/davidstutz/bootstrap-multiselect</a></p>
+                                            <p><a href="https://github.com/davidstutz/bootstrap-multiselect" >https://github.com/davidstutz/bootstrap-multiselect</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -346,7 +353,7 @@ const Home = () => {
                                             <p>bootstrap-select</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://developer.snapappointments.com/bootstrap-select" target="_blank">https://developer.snapappointments.com/bootstrap-select</a></p>
+                                            <p><a href="https://developer.snapappointments.com/bootstrap-select" >https://developer.snapappointments.com/bootstrap-select</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -356,7 +363,7 @@ const Home = () => {
                                             <p>bootstrap-tagsinput</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples" target="_blank">https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples</a></p>
+                                            <p><a href="https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples" >https://bootstrap-tagsinput.github.io/bootstrap-tagsinput/examples</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -366,7 +373,7 @@ const Home = () => {
                                             <p>bootstrap-touchspin</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.virtuosoft.eu/code/bootstrap-touchspin" target="_blank">https://www.virtuosoft.eu/code/bootstrap-touchspin</a></p>
+                                            <p><a href="https://www.virtuosoft.eu/code/bootstrap-touchspin" >https://www.virtuosoft.eu/code/bootstrap-touchspin</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -376,7 +383,7 @@ const Home = () => {
                                             <p>bootstrap-v4-rtl</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://bootstrap.rtlcss.com" target="_blank">https://bootstrap.rtlcss.com</a></p>
+                                            <p><a href="https://bootstrap.rtlcss.com" >https://bootstrap.rtlcss.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -386,7 +393,7 @@ const Home = () => {
                                             <p>chart.js</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.chartjs.org" target="_blank">https://www.chartjs.org</a></p>
+                                            <p><a href="https://www.chartjs.org" >https://www.chartjs.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -396,7 +403,7 @@ const Home = () => {
                                             <p>chartist</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://gionkunz.github.io/chartist-js" target="_blank">https://gionkunz.github.io/chartist-js</a></p>
+                                            <p><a href="https://gionkunz.github.io/chartist-js" >https://gionkunz.github.io/chartist-js</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -406,7 +413,7 @@ const Home = () => {
                                             <p>chartist-plugin-tooltips</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/tmmdata/chartist-plugin-tooltip" target="_blank">https://github.com/tmmdata/chartist-plugin-tooltip</a></p>
+                                            <p><a href="https://github.com/tmmdata/chartist-plugin-tooltip" >https://github.com/tmmdata/chartist-plugin-tooltip</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -416,7 +423,7 @@ const Home = () => {
                                             <p>clockpicker</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://weareoutman.github.io/clockpicker" target="_blank">https://weareoutman.github.io/clockpicker</a></p>
+                                            <p><a href="https://weareoutman.github.io/clockpicker" >https://weareoutman.github.io/clockpicker</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -426,7 +433,7 @@ const Home = () => {
                                             <p>datatables</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://datatables.net" target="_blank">https://datatables.net</a></p>
+                                            <p><a href="https://datatables.net" >https://datatables.net</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -436,7 +443,7 @@ const Home = () => {
                                             <p>dropzone</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.dropzonejs.com" target="_blank">https://www.dropzonejs.com</a></p>
+                                            <p><a href="https://www.dropzonejs.com" >https://www.dropzonejs.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -446,7 +453,7 @@ const Home = () => {
                                             <p>flot</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.flotcharts.org" target="_blank">https://www.flotcharts.org</a></p>
+                                            <p><a href="https://www.flotcharts.org" >https://www.flotcharts.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -456,7 +463,7 @@ const Home = () => {
                                             <p>flot-spline</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/miloszfalinski/jquery.flot.spline" target="_blank">https://github.com/miloszfalinski/jquery.flot.spline</a></p>
+                                            <p><a href="https://github.com/miloszfalinski/jquery.flot.spline" >https://github.com/miloszfalinski/jquery.flot.spline</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -466,7 +473,7 @@ const Home = () => {
                                             <p>fullcalendar</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://fullcalendar.io" target="_blank">https://fullcalendar.io</a></p>
+                                            <p><a href="https://fullcalendar.io" >https://fullcalendar.io</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -476,7 +483,7 @@ const Home = () => {
                                             <p>highlightjs</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://highlightjs.org" target="_blank">https://highlightjs.org</a></p>
+                                            <p><a href="https://highlightjs.org" >https://highlightjs.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -486,7 +493,7 @@ const Home = () => {
                                             <p>jquery</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://jquery.com" target="_blank">https://jquery.com</a></p>
+                                            <p><a href="https://jquery.com" >https://jquery.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -496,7 +503,7 @@ const Home = () => {
                                             <p>jquery-asColor</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/thecreation/jquery-asColor" target="_blank">https://github.com/thecreation/jquery-asColor</a></p>
+                                            <p><a href="https://github.com/thecreation/jquery-asColor" >https://github.com/thecreation/jquery-asColor</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -506,7 +513,7 @@ const Home = () => {
                                             <p>jquery-asColorPicker</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/thecreation/jquery-asColorPicker" target="_blank">https://github.com/thecreation/jquery-asColorPicker</a></p>
+                                            <p><a href="https://github.com/thecreation/jquery-asColorPicker" >https://github.com/thecreation/jquery-asColorPicker</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -516,7 +523,7 @@ const Home = () => {
                                             <p>jquery-asGradient</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://www.npmtrends.com/jquery-asGradient" target="_blank">https://www.npmtrends.com/jquery-asGradient</a></p>
+                                            <p><a href="https://www.npmtrends.com/jquery-asGradient" >https://www.npmtrends.com/jquery-asGradient</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -526,7 +533,7 @@ const Home = () => {
                                             <p>jquery-sparkline</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://plugins.jquery.com/sparkline" target="_blank">https://plugins.jquery.com/sparkline</a></p>
+                                            <p><a href="https://plugins.jquery.com/sparkline" >https://plugins.jquery.com/sparkline</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -536,7 +543,7 @@ const Home = () => {
                                             <p>jquery-steps</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="http://www.jquery-steps.com" target="_blank">http://www.jquery-steps.com</a></p>
+                                            <p><a href="http://www.jquery-steps.com" >http://www.jquery-steps.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -546,7 +553,7 @@ const Home = () => {
                                             <p>jqueryui</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://jqueryui.com" target="_blank">https://jqueryui.com</a></p>
+                                            <p><a href="https://jqueryui.com" >https://jqueryui.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -556,7 +563,7 @@ const Home = () => {
                                             <p>jquery-validation</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://jqueryvalidation.org" target="_blank">https://jqueryvalidation.org</a></p>
+                                            <p><a href="https://jqueryvalidation.org" >https://jqueryvalidation.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -566,7 +573,7 @@ const Home = () => {
                                             <p>jqvmap</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/10bestdesign/jqvmap" target="_blank">https://github.com/10bestdesign/jqvmap</a></p>
+                                            <p><a href="https://github.com/10bestdesign/jqvmap" >https://github.com/10bestdesign/jqvmap</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -576,7 +583,7 @@ const Home = () => {
                                             <p>metismenu</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/onokumus/metismenu" target="_blank">https://github.com/onokumus/metismenu</a></p>
+                                            <p><a href="https://github.com/onokumus/metismenu" >https://github.com/onokumus/metismenu</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -586,7 +593,7 @@ const Home = () => {
                                             <p>moment</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://momentjs.com" target="_blank">https://momentjs.com</a></p>
+                                            <p><a href="https://momentjs.com" >https://momentjs.com</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -596,7 +603,7 @@ const Home = () => {
                                             <p>morris</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://morrisjs.github.io/morris.js" target="_blank">https://morrisjs.github.io/morris.js</a></p>
+                                            <p><a href="https://morrisjs.github.io/morris.js" >https://morrisjs.github.io/morris.js</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -606,7 +613,7 @@ const Home = () => {
                                             <p>nestable2</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://ramonsmit.github.io/Nestable2" target="_blank">https://ramonsmit.github.io/Nestable2</a></p>
+                                            <p><a href="https://ramonsmit.github.io/Nestable2" >https://ramonsmit.github.io/Nestable2</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -616,7 +623,7 @@ const Home = () => {
                                             <p>nouislider</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://refreshless.com/nouislider" target="_blank">https://refreshless.com/nouislider</a></p>
+                                            <p><a href="https://refreshless.com/nouislider" >https://refreshless.com/nouislider</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -626,7 +633,7 @@ const Home = () => {
                                             <p>peity</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="http://benpickles.github.io/peity" target="_blank">http://benpickles.github.io/peity</a></p>
+                                            <p><a href="http://benpickles.github.io/peity" >http://benpickles.github.io/peity</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -636,7 +643,7 @@ const Home = () => {
                                             <p>perfect-scrollbar</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://plugins.jquery.com/perfect-scrollbar" target="_blank">https://plugins.jquery.com/perfect-scrollbar</a></p>
+                                            <p><a href="https://plugins.jquery.com/perfect-scrollbar" >https://plugins.jquery.com/perfect-scrollbar</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -646,7 +653,7 @@ const Home = () => {
                                             <p>pickadate</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://amsul.ca/pickadate.js" target="_blank">https://amsul.ca/pickadate.js</a></p>
+                                            <p><a href="https://amsul.ca/pickadate.js" >https://amsul.ca/pickadate.js</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -656,7 +663,7 @@ const Home = () => {
                                             <p>raphael</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/DmitryBaranovskiy/raphael" target="_blank">https://github.com/DmitryBaranovskiy/raphael</a></p>
+                                            <p><a href="https://github.com/DmitryBaranovskiy/raphael" >https://github.com/DmitryBaranovskiy/raphael</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -666,7 +673,7 @@ const Home = () => {
                                             <p>select2</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://select2.org" target="_blank">https://select2.org</a></p>
+                                            <p><a href="https://select2.org" >https://select2.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -676,7 +683,7 @@ const Home = () => {
                                             <p>summernote</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://summernote.org" target="_blank">https://summernote.org</a></p>
+                                            <p><a href="https://summernote.org" >https://summernote.org</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -686,7 +693,7 @@ const Home = () => {
                                             <p>svganimation</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/maxwellito/vivus" target="_blank">https://github.com/maxwellito/vivus</a></p>
+                                            <p><a href="https://github.com/maxwellito/vivus" >https://github.com/maxwellito/vivus</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -696,7 +703,7 @@ const Home = () => {
                                             <p>sweetalert2</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://sweetalert2.github.io" target="_blank">https://sweetalert2.github.io</a></p>
+                                            <p><a href="https://sweetalert2.github.io" >https://sweetalert2.github.io</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -706,7 +713,7 @@ const Home = () => {
                                             <p>toastr</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://github.com/CodeSeven/toastr" target="_blank">https://github.com/CodeSeven/toastr</a></p>
+                                            <p><a href="https://github.com/CodeSeven/toastr" >https://github.com/CodeSeven/toastr</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -716,7 +723,7 @@ const Home = () => {
                                             <p>wnumb</p>
                                         </div>
                                         <div className="col-12 col-sm-8">
-                                            <p><a href="https://refreshless.com/wnumb" target="_blank">https://refreshless.com/wnumb</a></p>
+                                            <p><a href="https://refreshless.com/wnumb" >https://refreshless.com/wnumb</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -749,12 +756,12 @@ const Home = () => {
                             <div className="row other-theme">
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/0zjyE">
+                                        <a  href="https://1.envato.market/0zjyE">
                                             <img src="images/product/wp-beglide.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/0zjyE">
+                                                <a  href="https://1.envato.market/0zjyE">
                                                     BeGlide: Corporate Business Consultant Agency WordPress Theme
                                                 </a>
                                             </h4>
@@ -763,12 +770,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/NE0QP">
+                                        <a  href="https://1.envato.market/NE0QP">
                                             <img src="images/product/wp-bheem.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/NE0QP">
+                                                <a  href="https://1.envato.market/NE0QP">
                                                     Bheem : Construction WordPress Theme RTL Ready
                                                 </a>
                                             </h4>
@@ -777,12 +784,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/WEdAZ">
+                                        <a  href="https://1.envato.market/WEdAZ">
                                             <img src="images/product/wp-beautyzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/WEdAZ">
+                                                <a  href="https://1.envato.market/WEdAZ">
                                                     BeautyZone: Beauty Spa Salon WordPress Theme
                                                 </a>
                                             </h4>
@@ -791,12 +798,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/6MAKK">
+                                        <a  href="https://1.envato.market/6MAKK">
                                             <img src="images/product/wp-bucklin.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href=" ">
+                                                <a  href=" ">
                                                     Bucklin - Creative Personal Blog WordPress Theme
                                                 </a>
                                             </h4>
@@ -805,12 +812,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/oJLNY">
+                                        <a  href="https://1.envato.market/oJLNY">
                                             <img src="images/product/archia.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/oJLNY">
+                                                <a  href="https://1.envato.market/oJLNY">
                                                     Archia - Architecture and Interior Design RTL Ready Template
                                                 </a>
                                             </h4>
@@ -819,12 +826,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/XEnGb">
+                                        <a  href="https://1.envato.market/XEnGb">
                                             <img src="images/product/agency.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/XEnGb">
+                                                <a  href="https://1.envato.market/XEnGb">
                                                     Agency | Creative Multipurpose Bootstrap 4 HTML Template
                                                 </a>
                                             </h4>
@@ -833,12 +840,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/3zZ9y">
+                                        <a  href="https://1.envato.market/3zZ9y">
                                             <img src="images/product/constructzilla .png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/3zZ9y">
+                                                <a  href="https://1.envato.market/3zZ9y">
                                                     ConstructZilla : Construction, Renovation &amp; Building HTML Template With RTL Ready
                                                 </a>
                                             </h4>
@@ -847,12 +854,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/ZEKLg">
+                                        <a  href="https://1.envato.market/ZEKLg">
                                             <img src="images/product/cargozone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/ZEKLg">
+                                                <a  href="https://1.envato.market/ZEKLg">
                                                     CargoZone - Transport, Cargo, Logistics &amp; Business Multipurpose HTML Template
                                                 </a>
                                             </h4>
@@ -861,12 +868,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/JZVO7">
+                                        <a  href="https://1.envato.market/JZVO7">
                                             <img src="images/product/yogazone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/JZVO7">
+                                                <a  href="https://1.envato.market/JZVO7">
                                                     YogaZone: Yoga, Fitness &amp; Meditation Mobile Responsive Bootstrap Html Template
                                                 </a>
                                             </h4>
@@ -875,12 +882,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/0zjxY">
+                                        <a  href="https://1.envato.market/0zjxY">
                                             <img src="images/product/gardanzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/0zjxY">
+                                                <a  href="https://1.envato.market/0zjxY">
                                                     GardenZone | Agriculture, Gardening &amp; Landscaping Responsive HTML Template
                                                 </a>
                                             </h4>
@@ -889,12 +896,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/VdYZJ">
+                                        <a  href="https://1.envato.market/VdYZJ">
                                             <img src="images/product/construct.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/VdYZJ">
+                                                <a  href="https://1.envato.market/VdYZJ">
                                                     Construct : Construction, Building &amp; Maintenance Business Template
                                                 </a>
                                             </h4>
@@ -903,12 +910,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/REnO2">
+                                        <a  href="https://1.envato.market/REnO2">
                                             <img src="images/product/butterfly.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/REnO2">
+                                                <a  href="https://1.envato.market/REnO2">
                                                     ButterFly : Spa, Beauty Salon &amp; Massage Template
                                                 </a>
                                             </h4>
@@ -917,12 +924,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/bQNDm">
+                                        <a  href="https://1.envato.market/bQNDm">
                                             <img src="images/product/curv.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/bQNDm">
+                                                <a  href="https://1.envato.market/bQNDm">
                                                     CURV: One Page Multipurpose Parallax
                                                 </a>
                                             </h4>
@@ -931,12 +938,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/zObPW">
+                                        <a  href="https://1.envato.market/zObPW">
                                             <img src="images/product/beautyzone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/zObPW">
+                                                <a  href="https://1.envato.market/zObPW">
                                                     BeautyZone: Beauty Spa Salon HTML Template
                                                 </a>
                                             </h4>
@@ -945,12 +952,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/3zZmk">
+                                        <a  href="https://1.envato.market/3zZmk">
                                             <img src="images/product/sportszone.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/3zZmk">
+                                                <a  href="https://1.envato.market/3zZmk">
                                                     SportsZone: Sports Club, New &amp; Game Magazine Mobile Responsive Bootstrap HTML Template
                                                 </a>
                                             </h4>
@@ -959,12 +966,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/3zZmk">
+                                        <a  href="https://1.envato.market/3zZmk">
                                             <img src="images/product/medico.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/3zZmk">
+                                                <a  href="https://1.envato.market/3zZmk">
                                                     MediCo.- Hospital and Doctor Clinic HTML Template
                                                 </a>
                                             </h4>
@@ -973,12 +980,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/g56Wg">
+                                        <a  href="https://1.envato.market/g56Wg">
                                             <img src="images/product/jobboard.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/g56Wg">
+                                                <a  href="https://1.envato.market/g56Wg">
                                                     Job Board: Job Portal | Job WebSite HTML Wireframe
                                                 </a>
                                             </h4>
@@ -987,12 +994,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/1d1Nm">
+                                        <a  href="https://1.envato.market/1d1Nm">
                                             <img src="images/product/industry.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/1d1Nm">
+                                                <a  href="https://1.envato.market/1d1Nm">
                                                     Industry - Factory &amp; Industrial HTML Template
                                                 </a>
                                             </h4>
@@ -1001,12 +1008,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/qoKKy">
+                                        <a  href="https://1.envato.market/qoKKy">
                                             <img src="images/product/lemars.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/qoKKy">
+                                                <a  href="https://1.envato.market/qoKKy">
                                                     Le Mars - Minimal Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1015,12 +1022,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/A53RN">
+                                        <a  href="https://1.envato.market/A53RN">
                                             <img src="images/product/bizmap.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/A53RN">
+                                                <a  href="https://1.envato.market/A53RN">
                                                     BizMap - Business Directory Listing HTML Template
                                                 </a>
                                             </h4>
@@ -1029,12 +1036,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/EYb39">
+                                        <a  href="https://1.envato.market/EYb39">
                                             <img src="images/product/umang_academy.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/EYb39">
+                                                <a  href="https://1.envato.market/EYb39">
                                                     Umang Academy : Kindergarden, Kids Play School Template
                                                 </a>
                                             </h4>
@@ -1043,12 +1050,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/EAeOQ">
+                                        <a  href="https://1.envato.market/EAeOQ">
                                             <img src="images/product/kelsey.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/EAeOQ">
+                                                <a  href="https://1.envato.market/EAeOQ">
                                                     Kelsey - Creative Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1057,12 +1064,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/xoqvR">
+                                        <a  href="https://1.envato.market/xoqvR">
                                             <img src="images/product/bucklin.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/xoqvR">
+                                                <a  href="https://1.envato.market/xoqvR">
                                                     Bucklin - Creative Personal Blog HTML Template
                                                 </a>
                                             </h4>
@@ -1071,12 +1078,12 @@ const Home = () => {
                                 </div>
                                 <div className="col-md-4 col-sm-6 m-b30">
                                     <div className="product-port-bx">
-                                        <a target="_blank" href="https://1.envato.market/WvZqM">
+                                        <a  href="https://1.envato.market/WvZqM">
                                             <img src="images/product/smartclass.png" />
                                         </a>
                                         <div className="product-info">
                                             <h4 className="title">
-                                                <a target="_blank" href="https://1.envato.market/WvZqM">
+                                                <a  href="https://1.envato.market/WvZqM">
                                                     SmartClass | Education Agency Choching &amp; Tuition HTML Template
                                                 </a>
                                             </h4>
@@ -1101,7 +1108,7 @@ const Home = () => {
                                     </ul>
                                     <div className="gmail-box">
                                         <a href="skype:rahulxarma?chat" className="gmail"><i className="fa fa-skype" />rahulxarma</a>
-                                        <a target="_blank" href="dexignzones@gmail.com" className="gmail"><i className="fa fa-envelope" /> dexignzones@gmail.com</a>
+                                        <a  href="dexignzones@gmail.com" className="gmail"><i className="fa fa-envelope" /> dexignzones@gmail.com</a>
                                     </div>
                                 </div>
                             </div>
