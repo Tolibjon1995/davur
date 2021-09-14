@@ -9311,6 +9311,20 @@ svg.pulse-svg {
   justify-content: start; }
 [data-sidebar-style="modern"][data-layout="horizontal"] .header .header-content {
   padding-left: 30px; }
+  
+  
+  
+.eniga{
+  width: 78px !important;
+}
+.qot{
+  height: 100vh !important;
+  overflow-y: auto;
+}
+
+
+
+
 
 .header-left {
   height: 100%;
