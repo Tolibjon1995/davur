@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         
-            <div className="header">
+            <div className="header nav-fixsed">
                 <div className="header-content">
                     <nav className="navbar navbar-expand">
                         <div className="collapse navbar-collapse justify-content-between">
@@ -11,7 +11,7 @@ const Header = () => {
                                 <div className="search_bar dropdown show">
                                     <div className="dropdown-menu p-0 m-0 show">
                                         <form>
-                                            <input className="form-control" type="search" placeholder="Search Here" aria-label="Search" />
+                                            <input className="form-control inp" type="search" placeholder="Search Here" aria-label="Search" />
                                         </form>
                                     </div>
                                     <span className="search_icon p-3 c-pointer" data-toggle="dropdown">

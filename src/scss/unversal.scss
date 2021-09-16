@@ -1,0 +1,103 @@
+$yon : 17rem;
+
+
+@font-face {
+    font-family: "popins";
+    src: url("../scss/Poppins-Regular.ttf") format("truetype");
+}
+
+.left-fixsed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 120px;
+}
+
+.nav-fixsed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-left: 21.563rem;
+    padding-right: 30px;
+}
+
+.nav-hed-fixsed {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.con-top {
+    margin-top: 7.5rem;
+    background-color: #fbfbfb;
+}
+
+.inp {
+    height: 56px;
+}
+
+.eniga {
+    width: 78px !important;
+}
+
+.qot {
+    height: 100vh !important;
+    overflow-y: auto;
+}
+
+.nav-link {
+    color: black; 
+}
+
+.ichki {
+    margin-left: 2.0625rem;
+}
+
+.no-hover {
+    padding-left: 0;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.icon-log {
+    mask-image: url('../img/logo-text.png');
+    -webkit-mask-image: url('../img/logo-text.png');
+    background-color: rgb(14, 13, 13) !important;
+    color: black;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+}
+.MuiListItemIcon-root{
+    color: rgb(150, 155, 160) !important;
+}
+.MuiTypography-body1  {
+    color: rgb(150, 155, 160);
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-family: 'popins',serif !important;
+    
+   
+}
+.heh{
+    height: 54px !important;
+}
+.MuiListItem-root {
+    
+}
+.MuiListItem-gutters {
+    padding: 10px 16px !important;
+    &:hover{
+        .MuiTypography-body1{
+            color: rgb(0, 0, 255) !important;
+        }
+        
+        .MuiListItemIcon-root{
+            color: rgb(0, 0, 255) !important;
+        }
+        .MuiSvgIcon-root{
+            color: rgb(0, 0, 255) !important;
+        }
+    }
+}
