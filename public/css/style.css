@@ -19278,34 +19278,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   background: #181f39;
 }
 
-.chatbox .msg_card_body {
-  height: calc(100vh - 195px);
-}
 
-.chatbox .contacts_body {
-  height: calc(100vh - 120px);
-}
-
-.chatbox .card-header {
-  background: #f4f7ff;
-  padding: 15px 20px;
-  justify-content: center;
-}
-
-.chatbox .card-header h6 {
-  font-size: 15px;
-}
-
-.chatbox .card-header p {
-  line-height: 1.2;
-  font-size: 12px;
-  color: #7e7e7e;
-}
-
-.chatbox .chat-list-header {
-  justify-content: space-between;
-  background: #fff;
-}
 
 [data-theme-version="dark"] .chatbox .chat-list-header {
   background: #1e2746;

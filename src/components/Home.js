@@ -26,13 +26,15 @@ import Float from './pages/charts/Float'
 import Morris from './pages/charts/Morris'
 import Peitiy from './pages/charts/Peitiy'
 import Sparkline from './pages/charts/Sparkline'
-
+import LeftDrop from './dropdownlar/LeftDrop'
 
 const Home = () => {
 
-
+    const [ochi, setOch] = useState(false)
     const [isOpen, setIsOpen] = useState(true);
     const toggle = () => setIsOpen(!isOpen);
+    const openDrop = () => setOch(!ochi)
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -43,22 +45,24 @@ const Home = () => {
     return (
         <div>
             <BrowserRouter>
-                <Header stet={isOpen} />
+                <LeftDrop och={ochi} fun={openDrop} />
+                <Header stet={isOpen} drop={openDrop} />
                 <NavHeader och={toggle} stet={isOpen} />
                 <LeftMenu stet={isOpen} />
+
                 <Switch>
-                    <div className={`content-body con-top ${isOpen === false ? 'con-now':''}`}>
+                    <div className={`content-body con-top ${isOpen === false ? 'con-now' : ''}`}>
                         <div className="container-fluid">
                             <div>
                                 <Route path='/' exact component={Dashboard} />
                                 <Route path='/analitics' exact component={Analitics} />
                                 <Route path='/review' exact component={Rewiew} />
-                                <Route path='/order' exact component={Order}/>
+                                <Route path='/order' exact component={Order} />
                                 <Route path='/order-list' exact component={OrderList} />
                                 <Route path='/general-customers' exact component={GeneralCustomers} />
                                 <Route path='/email/compose' exact component={Compose} />
-                                <Route path='/email/inbox' exact component={Inbox}/>
-                                <Route path='/email/Read' exact component={Read}/>
+                                <Route path='/email/inbox' exact component={Inbox} />
+                                <Route path='/email/Read' exact component={Read} />
                                 <Route path='/shop/produkt-grid' exact component={ProductGrid} />
                                 <Route path='/shop/product-list' exact component={ProductList} />
                                 <Route path='/shop/produkt-details' exact component={ProductDetails} />
@@ -78,7 +82,7 @@ const Home = () => {
                 </Switch>
             </BrowserRouter>
 
-            
+
         </div>
     );
 };

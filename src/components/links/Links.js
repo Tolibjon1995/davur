@@ -31,9 +31,6 @@ const Links = (props) => {
     };
 
 
-    console.log(props.och)
-
-
     return (
         <div>
             <ListItem className={`${props.och === false?'anim2':''}`} button onClick={handleClick}>
