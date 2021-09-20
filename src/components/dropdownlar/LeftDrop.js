@@ -3,10 +3,11 @@ import LabTabs from './Tab'
 const LeftDrop = (props) => {
     return (
         <div>
-            <div  className={`drop-container ${props.och === true ? 'drop-con' : ''}`}>
-                <div className="drop-drop">
+            <div onClick={props.fun} className={`drop-container ${props.och === true ? 'drop-con' : ''}`}>
+                
+            </div>
+            <div className={`drop-drop ${props.och === true ? 'drop-con' : ''}`}>
                     <LabTabs />
-                </div>
             </div>
         </div>
     );
