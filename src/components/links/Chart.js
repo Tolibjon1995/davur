@@ -13,7 +13,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
 
-const Chart = () => {
+const Chart = (props) => {
 
 
     const useStyles = makeStyles((theme) => ({
@@ -38,13 +38,13 @@ const Chart = () => {
         <div>
         <ListItem button onClick={handleClick}>
         <ListItemIcon>
-            <TuneIcon />
+            <TuneIcon className={`${props.och === false ?'anim2':''}`}/>
         </ListItemIcon>
-        <ListItemText primary="Charts" />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        <ListItemText className={`${props.och === false?'anim':''}`} primary="Charts" />
+        {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
     </ListItem>
 
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/float' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
@@ -54,7 +54,7 @@ const Chart = () => {
         </Link>
     </Collapse>
     
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/morris' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
@@ -64,7 +64,7 @@ const Chart = () => {
         </Link>
     </Collapse>
     
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/chartjs' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
@@ -74,7 +74,7 @@ const Chart = () => {
         </Link>
     </Collapse>
     
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/chartist' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
@@ -84,7 +84,7 @@ const Chart = () => {
         </Link>
     </Collapse>
     
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/sparkline' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>
@@ -94,7 +94,7 @@ const Chart = () => {
         </Link>
     </Collapse>
     
-    <Collapse in={open} timeout="auto" unmountOnExit>
+    <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
         <Link to='/peitiy' className='nav-link'>
             <List component="div" disablePadding>
                 <ListItem button className={classes.nested}>

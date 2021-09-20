@@ -43,11 +43,11 @@ const Home = () => {
     return (
         <div>
             <BrowserRouter>
-                <Header />
+                <Header stet={isOpen} />
                 <NavHeader och={toggle} stet={isOpen} />
                 <LeftMenu stet={isOpen} />
                 <Switch>
-                    <div className="content-body con-top">
+                    <div className={`content-body con-top ${isOpen === false ? 'con-now':''}`}>
                         <div className="container-fluid">
                             <div>
                                 <Route path='/' exact component={Dashboard} />
@@ -78,7 +78,7 @@ const Home = () => {
                 </Switch>
             </BrowserRouter>
 
-
+            
         </div>
     );
 };

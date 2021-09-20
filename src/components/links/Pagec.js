@@ -10,7 +10,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
 
-const Pagec = () => {
+const Pagec = (props) => {
 
 
     const useStyles = makeStyles((theme) => ({
@@ -35,13 +35,13 @@ const Pagec = () => {
         <div>
             <ListItem button onClick={handleClick}>
                 <ListItemIcon>
-                    <LayersIcon />
+                    <LayersIcon className={`${props.och === false ?'anim2':''}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Pages" />
-                {open ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText className={`${props.och === false?'anim':''}`} primary="Pages" />
+                {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
             </ListItem>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <h6 className='ichki'>Keraksiz linklar</h6>
             </Collapse>
         </div>

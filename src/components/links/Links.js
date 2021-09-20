@@ -10,7 +10,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
-const Links = () => {
+const Links = (props) => {
 
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -31,20 +31,20 @@ const Links = () => {
     };
 
 
-
+    console.log(props.och)
 
 
     return (
         <div>
-            <ListItem button onClick={handleClick}>
+            <ListItem className={`${props.och === false?'anim2':''}`} button onClick={handleClick}>
                 <ListItemIcon>
-                    <DnsIcon />
+                    <DnsIcon className={`${props.och === false ?'anim2':''}`} />
                 </ListItemIcon>
-                <ListItemText primary="Dashboard" />
-                {open ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText className={`${props.och === false?'anim':''}`} primary="Dashboard" />
+                {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
             </ListItem>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <Link to='/' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
@@ -54,7 +54,7 @@ const Links = () => {
                 </Link>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Link to='/analitics' className='nav-link'>
                         <ListItem button className={classes.nested}>
@@ -64,7 +64,7 @@ const Links = () => {
                 </List>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Link to='/review' className='nav-link'>
                         <ListItem button className={classes.nested}>
@@ -74,7 +74,7 @@ const Links = () => {
                 </List>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Link to='/order' className='nav-link'>
                         <ListItem button className={classes.nested}>
@@ -84,7 +84,7 @@ const Links = () => {
                 </List>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Link to='/order-list' className='nav-link'>
                         <ListItem button className={classes.nested}>
@@ -94,7 +94,7 @@ const Links = () => {
                 </List>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Link to='/general-customers' className='nav-link'>
                         <ListItem button className={classes.nested}>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Header = () => {
+const Header = (props) => {
     return (
         
-            <div className="header nav-fixsed">
+            <div className={`header nav-fixsed ${props.stet === false ?'hed-now':''}`}>
                 <div className="header-content">
                     <nav className="navbar navbar-expand">
                         <div className="collapse navbar-collapse justify-content-between">

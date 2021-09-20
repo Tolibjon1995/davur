@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import Email from './Email';
 import Shop from './Shop';
 
-const App = () => {
+const App = (props) => {
 
 
     const useStyles = makeStyles((theme) => ({
@@ -37,13 +37,13 @@ const App = () => {
         <div>
             <ListItem button onClick={handleClick}>
                 <ListItemIcon>
-                    <AirplayIcon />
+                    <AirplayIcon className={`${props.och === false ?'anim2':''}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Apps" />
-                {open ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText className={`${props.och === false?'anim':''}`} primary="Apps" />
+                {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
             </ListItem>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <Link to='/profile' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
@@ -54,14 +54,14 @@ const App = () => {
             </Collapse>
 
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Email />
                 </List>
             </Collapse>
 
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <ListItem button className={classes.nested}>
                         <Link to='/calendar' className='nav-link'>Calendar</Link>
@@ -69,7 +69,7 @@ const App = () => {
                 </List>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                     <Shop />
                 </List>

@@ -17,21 +17,23 @@ const LeftMenu = (props) => {
     const [open, setopen] = useState(false)
     const toggle = () => setopen(!open)
 
+
+
     return (
 
 
         <div>
-            
-            <div className={`deznav qot left-fixsed ${props.stet === false ? 'eniga' : ''}`}>
-                <Links className='heh' />
-                <App className='heh' />
-                <Chart className='heh' />
-                <Boot className='heh' />
-                <Plugn className='heh' />
-                <Widjet className='heh' />
-                <Formc className='heh' />
-                <Table className='heh' />
-                <Pagec className='heh' />
+
+            <div className={`deznav qot left-fixsed ${props.stet === false ? 'eniga ' : ''}`}>
+                <Links och={props.stet} className='heh' />
+                <App och={props.stet} className='heh' />
+                <Chart och={props.stet} className='heh' />
+                <Boot och={props.stet} className='heh' />
+                <Plugn och={props.stet} className='heh' />
+                <Widjet och={props.stet} className='heh' />
+                <Formc och={props.stet} className='heh' />
+                <Table och={props.stet} className='heh' />
+                <Pagec och={props.stet} className='heh' />
                 <div className={`deznav-scroll ${props.stet === false ? 'd-none' : ''}`}>
                     <div className="add-menu-sidebar">
                         <img src="images/icon1.png" alt />
@@ -41,6 +43,9 @@ const LeftMenu = (props) => {
                     <div className="copyright">
                         <p><strong>Davur - Restaurant Admin Dashboard</strong> © 2021 All Rights Reserved</p>
                         <p>Made with <i className="fa fa-heart" /> by NamCoders</p>
+                    </div>
+                    <div className="ps__rail-y">
+                        <div className="ps__thumb-y"></div>
                     </div>
                 </div>
             </div>

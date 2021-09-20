@@ -8,7 +8,7 @@ import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
-const Email = () => {
+const Email = (props) => {
 
     const useStyles = makeStyles((theme) => ({
         root: {
@@ -32,11 +32,11 @@ const Email = () => {
         <div className='ichki'>
             <ListItem button onClick={handleClick}>
 
-                <ListItemText primary="Email" />
-                {open ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText className={`${props.och === false?'anim':''}`} primary="Email" />
+                {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
             </ListItem>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <Link to='/email/compose' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
@@ -46,7 +46,7 @@ const Email = () => {
                 </Link>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <Link to='/email/inbox' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
@@ -56,7 +56,7 @@ const Email = () => {
                 </Link>
             </Collapse>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <Link to='/email/read' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>

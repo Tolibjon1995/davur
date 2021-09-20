@@ -10,7 +10,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
 
-const Plugin = () => {
+const Plugin = (props) => {
 
 
     const useStyles = makeStyles((theme) => ({
@@ -35,13 +35,13 @@ const Plugin = () => {
         <div>
             <ListItem button onClick={handleClick}>
                 <ListItemIcon>
-                    <FavoriteBorderIcon />
+                    <FavoriteBorderIcon className={`${props.och === false ?'anim2':''}`}/>
                 </ListItemIcon>
-                <ListItemText primary="Plugins" />
-                {open ? <ExpandLess /> : <ExpandMore />}
+                <ListItemText className={`${props.och === false?'anim':''}`} primary="Plugins" />
+                {open ? <ExpandLess className={`${props.och === false?'anim':''}`} /> : <ExpandMore className={`${props.och === false?'anim':''}`} />}
             </ListItem>
 
-            <Collapse in={open} timeout="auto" unmountOnExit>
+            <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
                 <h6 className='ichki'>Keraksiz linklar</h6>
             </Collapse>
         </div>

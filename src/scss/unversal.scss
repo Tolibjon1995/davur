@@ -10,7 +10,7 @@ $yon : 17rem;
     position: fixed;
     left: 0;
     top: 0;
-    padding-top: 120px;
+    padding-top: 125px;
 }
 
 .nav-fixsed {
@@ -27,13 +27,26 @@ $yon : 17rem;
     top: 0;
 }
 
+.hed-now {
+    padding-left: 9.563rem;
+}
+
 .con-top {
     margin-top: 7.5rem;
     background-color: #fbfbfb;
 }
 
+.con-now {
+    margin-left: 5rem;
+}
+
+.log-new {
+    margin-left: -11px !important;
+}
+
 .inp {
     height: 56px;
+    border: 1px solid #ebebeb;
 }
 
 .eniga {
@@ -43,10 +56,16 @@ $yon : 17rem;
 .qot {
     height: 100vh !important;
     overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.anim {
+    display: none !important;
+    overflow-y: hidden;
 }
 
 .nav-link {
-    color: black; 
+    color: black;
 }
 
 .ichki {
@@ -69,35 +88,131 @@ $yon : 17rem;
     mask-repeat: no-repeat;
     mask-size: 100%;
 }
-.MuiListItemIcon-root{
+
+.MuiListItemIcon-root {
     color: rgb(150, 155, 160) !important;
+    transition: all 0.3s linear;
 }
-.MuiTypography-body1  {
+
+.MuiTypography-body1 {
     color: rgb(150, 155, 160);
     font-size: 18px !important;
     font-weight: 500 !important;
-    font-family: 'popins',serif !important;
-    
-   
+    font-family: 'popins', serif !important;
+
+
 }
-.heh{
-    height: 54px !important;
+
+.heh {
+    height: 50px !important;
 }
-.MuiListItem-root {
-    
-}
+
+
 .MuiListItem-gutters {
     padding: 10px 16px !important;
-    &:hover{
-        .MuiTypography-body1{
-            color: rgb(0, 0, 255) !important;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 4px;
+        height: 80%;
+        margin: auto;
+    }
+
+
+    &:hover {
+
+        &::after {
+            content: '';
+            background-color: #2F4CDD;
+            position: absolute;
+            left: 0;
+            top: 10%;
         }
+
+
+
+        .MuiTypography-body1 {
+            color: #2F4CDD !important;
+        }
+
+        .MuiListItemIcon-root {
+            color: #2F4CDD !important;
+        }
+
+        .MuiSvgIcon-root {
+            color: #2F4CDD !important;
+            transition: all 0.2s linear;
+        }
+    }
+
+}
+
+.anim2 {
+    transition: all 0.3s linear;
+    width: 28px !important;
+    height: 28px !important;
+
+    &.MuiSvgIcon-root {
+        margin-left: 7px !important;
+    }
+
+}
+.kolapse{
+    position: relative;
+    .colaps {
+
+        position: absolute;
+        left: 18rem;
+        top: 0;
+        width: 12rem;
+        z-index: 1001;
+        // display: none;
+        padding-left: 1px;
+        height: auto !important;
+        box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
+        border-radius: 6px;
+        margin-left: 0;
+        border: 0;
+        background: #fff;
+    
         
-        .MuiListItemIcon-root{
-            color: rgb(0, 0, 255) !important;
-        }
-        .MuiSvgIcon-root{
-            color: rgb(0, 0, 255) !important;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            background: inherit;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            left: -5px;
+            top: 20px;
         }
     }
 }
+
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+
+    background: #FFF !important;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #DAE2F3; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8d8c8c; 
+  }

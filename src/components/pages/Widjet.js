@@ -10,7 +10,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Link } from 'react-router-dom';
 
 
-const Widjet = () => {
+const Widjet = (props) => {
 
 
     const useStyles = makeStyles((theme) => ({
@@ -35,10 +35,10 @@ const Widjet = () => {
         <div>
             <ListItem button onClick={handleClick}>
                 <ListItemIcon>
-                    <SettingsIcon />
+                    <SettingsIcon className={`${props.och === false ?'anim2':''}`}/>
                 </ListItemIcon>
                 <Link to='/widget' className='nav-link no-hover'>
-                    <ListItemText primary="Widget" />
+                    <ListItemText className={`${props.och === false?'anim':''}`} primary="Widget" />
                 </Link>
             </ListItem>
 
