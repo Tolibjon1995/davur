@@ -482,9 +482,43 @@ $yon : 17rem;
 
 }
 
+.popover{
+    position: absolute !important;
+    top: -100px !important;
+    left: 0 !important;
+    right: auto;
+    border: 0;
+    
+    
 
-
-
+    span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .viz{
+        width: 310px !important;
+        margin-right: 80px;
+    }
+    .arrow{
+        display: none !important;
+    }
+    .dropdown-menu{
+        border: 0;
+        padding: 15px 0;
+    }
+}
+.navbar-nav{
+    .nav-link{
+        cursor: pointer;
+        padding: 1rem 1rem !important;
+        font-size: 18px;
+        &.user-left{
+            padding: 0rem !important;
+            padding-left: 1rem !important;
+            
+        }
+    }
+}
 
 
 

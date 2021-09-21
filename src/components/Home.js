@@ -28,6 +28,7 @@ import Peitiy from './pages/charts/Peitiy'
 import Sparkline from './pages/charts/Sparkline'
 import LeftDrop from './dropdownlar/LeftDrop'
 
+
 const Home = () => {
 
     const [ochi, setOch] = useState(false)
@@ -45,6 +46,7 @@ const Home = () => {
     return (
         <div>
             <BrowserRouter>
+                
                 <LeftDrop och={ochi} fun={openDrop} />
                 <Header stet={isOpen} drop={openDrop} />
                 <NavHeader och={toggle} stet={isOpen} />
