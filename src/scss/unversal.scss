@@ -67,7 +67,9 @@ $yon : 17rem;
 .nav-link {
     color: black;
 }
-
+.nav-link:active{
+    color: #2F4CDD;
+}
 .ichki {
     margin-left: 2.0625rem;
 }
@@ -111,7 +113,7 @@ $yon : 17rem;
 .MuiListItem-gutters {
     padding: 10px 16px !important;
     position: relative;
-
+    
     &::after {
         content: '';
         width: 4px;
@@ -478,7 +480,9 @@ $yon : 17rem;
             }
         }
     }
-
+.contacts{
+    overflow-y: auto !important;
+}
 
 }
 
@@ -505,6 +509,7 @@ $yon : 17rem;
     .dropdown-menu{
         border: 0;
         padding: 15px 0;
+        overflow-y: auto;
     }
 }
 .navbar-nav{
@@ -520,6 +525,18 @@ $yon : 17rem;
     }
 }
 
+.table-responsive{
+   table{
+       width: 100% !important;
+       th{
+           padding: 15px 30px !important;
+       }
+       td{
+        padding: 1rem 0 !important;
+        text-align: left;
+    }
+   }
+}
 
 
 

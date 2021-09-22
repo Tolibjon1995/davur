@@ -10,6 +10,8 @@ import NavHeader from './NavHeader';
 import Order from './pages/Dashboard/Order'
 import OrderList from './pages/Dashboard/OrderList'
 import GeneralCustomers from './pages/Dashboard/GeneralCustomers'
+import Profile from './pages/Apps/Profile'
+import Calendar from './pages/Apps/Calendar'
 import Compose from './pages/Apps/email/Compose'
 import Inbox from './pages/Apps/email/Inbox'
 import Read from './pages/Apps/email/Read'
@@ -62,16 +64,18 @@ const Home = () => {
                                 <Route path='/order' exact component={Order} />
                                 <Route path='/order-list' exact component={OrderList} />
                                 <Route path='/general-customers' exact component={GeneralCustomers} />
-                                <Route path='/email/compose' exact component={Compose} />
-                                <Route path='/email/inbox' exact component={Inbox} />
-                                <Route path='/email/Read' exact component={Read} />
-                                <Route path='/shop/produkt-grid' exact component={ProductGrid} />
-                                <Route path='/shop/product-list' exact component={ProductList} />
-                                <Route path='/shop/produkt-details' exact component={ProductDetails} />
-                                <Route path='/shop/checkout' exact component={CheskOut} />
-                                <Route path='/shop/customers' exact component={Customert} />
-                                <Route path='/shop/invoice' exact component={Invoice} />
-                                <Route path='/shop/order' exact component={Orders} />
+                                <Route path='/profile' exact component={Profile}/>
+                                <Route path='/calendar' exact component={Calendar}/>
+                                <Route path='/compose' exact component={Compose} />
+                                <Route path='/inbox' exact component={Inbox} />
+                                <Route path='/Read' exact component={Read} />
+                                <Route path='/produkt-grid' exact component={ProductGrid} />
+                                <Route path='/product-list' exact component={ProductList} />
+                                <Route path='/product-details' exact component={ProductDetails} />
+                                <Route path='/checkout' exact component={CheskOut} />
+                                <Route path='/customers' exact component={Customert} />
+                                <Route path='/invoice' exact component={Invoice} />
+                                <Route path='/order' exact component={Orders} />
                                 <Route path='/chartist' exact component={Chartist} />
                                 <Route path='/chartjs' exact component={ChartJs} />
                                 <Route path='/float' exact component={Float} />

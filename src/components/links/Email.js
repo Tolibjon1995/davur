@@ -37,7 +37,7 @@ const Email = (props) => {
             </ListItem>
 
             <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
-                <Link to='/email/compose' className='nav-link'>
+                <Link to='/compose' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Compose
@@ -47,7 +47,7 @@ const Email = (props) => {
             </Collapse>
 
             <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
-                <Link to='/email/inbox' className='nav-link'>
+                <Link to='/inbox' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                            Inbox
@@ -57,7 +57,7 @@ const Email = (props) => {
             </Collapse>
 
             <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
-                <Link to='/email/read' className='nav-link'>
+                <Link to='/read' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Read

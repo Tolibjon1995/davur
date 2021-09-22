@@ -1,0 +1,12 @@
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+    position: absolute;
+    top: 38px;
+    font-size: 70px;
+}
+.alice-carousel__prev-btn {
+    left: 50px;
+ }
+.alice-carousel__next-btn {
+   right: -56px;
+}
