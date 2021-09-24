@@ -29,6 +29,12 @@ import Morris from './pages/charts/Morris'
 import Peitiy from './pages/charts/Peitiy'
 import Sparkline from './pages/charts/Sparkline'
 import LeftDrop from './dropdownlar/LeftDrop'
+import Widjet from './pages/Widjet'
+import Register from './pages/pagesss/Register'
+import Login from './pages/pagesss/Login'
+import LockScren from './pages/pagesss/LockScren'
+
+
 
 
 const Home = () => {
@@ -75,13 +81,17 @@ const Home = () => {
                                 <Route path='/checkout' exact component={CheskOut} />
                                 <Route path='/customers' exact component={Customert} />
                                 <Route path='/invoice' exact component={Invoice} />
-                                <Route path='/order' exact component={Orders} />
+                                <Route path='/orders' exact component={Orders} />
                                 <Route path='/chartist' exact component={Chartist} />
                                 <Route path='/chartjs' exact component={ChartJs} />
                                 <Route path='/float' exact component={Float} />
                                 <Route path='/morris' exact component={Morris} />
+                                <Route path='/widget' exact component={Widjet} />
                                 <Route path='/peitiy' exact component={Peitiy} />
                                 <Route path='/sparkline' exact component={Sparkline} />
+                                <Route path='/register' exact component={Register}/>
+                                <Route path='/login' exact component={Login}/>
+                                <Route path='/lock-skreen' exact component={LockScren}/>
                             </div>
                         </div>
                     </div>

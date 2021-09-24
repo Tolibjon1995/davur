@@ -37,7 +37,7 @@ const Shop = () => {
             </ListItem>
 
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/produkt-grid' className='nav-link'>
+                <Link to='/produkt-grid' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Product Grid
@@ -47,7 +47,7 @@ const Shop = () => {
             </Collapse>
 
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/product-list' className='nav-link'>
+                <Link to='/product-list' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                            Product List
@@ -57,7 +57,7 @@ const Shop = () => {
             </Collapse>
 
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/product-details' className='nav-link'>
+                <Link to='/product-details' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Product Details
@@ -67,7 +67,7 @@ const Shop = () => {
             </Collapse>
             
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/order' className='nav-link'>
+                <Link to='/orders' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Order
@@ -77,7 +77,7 @@ const Shop = () => {
             </Collapse>
             
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/checkout' className='nav-link'>
+                <Link to='/checkout' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Checkout
@@ -87,7 +87,7 @@ const Shop = () => {
             </Collapse>
             
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/invoice' className='nav-link'>
+                <Link to='/invoice' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Invoice
@@ -97,7 +97,7 @@ const Shop = () => {
             </Collapse>
             
             <Collapse in={open} timeout="auto" unmountOnExit>
-                <Link to='/shop/customers' className='nav-link'>
+                <Link to='/customers' className='nav-link'>
                     <List component="div" disablePadding>
                         <ListItem button className={classes.nested}>
                             Customers

@@ -62,11 +62,13 @@ const App = (props) => {
 
 
             <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>
+            <Link to='/calendar' className='nav-link'>
                 <List component="div" disablePadding>
                     <ListItem button className={classes.nested}>
-                        <Link to='/calendar' className='nav-link'>Calendar</Link>
+                        Calendar
                     </ListItem>
                 </List>
+                </Link>
             </Collapse>
 
             <Collapse className={`${props.och === false?'anim':''}`} in={open} timeout="auto" unmountOnExit>

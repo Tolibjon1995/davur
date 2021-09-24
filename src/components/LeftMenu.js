@@ -7,7 +7,7 @@ import Formc from './links/Formc';
 import Pagec from './links/Pagec';
 import Plugn from './links/Plugn';
 import Table from './links/Table';
-import Widjet from './pages/Widjet';
+import Widj from './links/Widj';
 import { Link } from 'react-router-dom';
 
 
@@ -30,7 +30,7 @@ const LeftMenu = (props) => {
                 <Chart och={props.stet} className='heh' />
                 <Boot och={props.stet} className='heh' />
                 <Plugn och={props.stet} className='heh' />
-                <Widjet och={props.stet} className='heh' />
+                <Widj och={props.stet} className='heh' />
                 <Formc och={props.stet} className='heh' />
                 <Table och={props.stet} className='heh' />
                 <Pagec och={props.stet} className='heh' />

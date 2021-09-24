@@ -234,7 +234,7 @@ $yon : 17rem;
     top: 0 !important;
     right: -100%;
     bottom: 0 !important;
-    z-index: 9999999999999999999999;
+    z-index: 9999999999999999999999999999999999999999999999999999999999 !important;
     cursor: pointer;
 
 
@@ -376,7 +376,7 @@ $yon : 17rem;
     background-color: #fff;
     margin-left: calc(100% - 340px);
     cursor: default;
-    z-index: 999999999999999999999999;
+    z-index: 9999999999999999999999999999999999999999999999999999999999999999 !important;
     
     &.drop-con {
         right: 0;
@@ -537,7 +537,29 @@ $yon : 17rem;
     }
    }
 }
+.skroll{
+    .card{
+        .card-body{
+            overflow-y: auto !important;
+        }
+    }
+}
 
+.reg{
+    background-color: #FBFBFB;
+    position: fixed;
+    width: 100%;
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999999999999999999999999999999999999;
+    
+    
+    .authincation{
+        margin-top: -5px !important;
+    }
+
+}
 
 
 
